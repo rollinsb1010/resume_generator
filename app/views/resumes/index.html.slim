@@ -8,6 +8,7 @@ table
     th
     th
     th
+    th
 
   - @resumes.each do |resume|
     tr
@@ -15,6 +16,7 @@ table
       td = resume.last_name
       td = resume.intro
       td = link_to 'Show', resume
+      td = link_to 'Pdf version', resume_path(:format => :pdf)
       td = link_to 'Edit', edit_resume_path(resume)
       td = link_to 'Destroy', resume, :confirm => 'Are you sure?', :method => :delete
 
