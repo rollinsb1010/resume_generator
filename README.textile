@@ -3,10 +3,17 @@ h1. Resume Generator
 This application is an exercise in RoR development.
 The goal is to manage resume data and export resume in pdf.
 
+The app is available here : http://nameless-dawn-5625.herokuapp.com/
+
+h2. System
+
+This application runs under Windows on development and under Unix in production.
+
 
 h2. Ruby on Rails
 
 This application requires:
+
 
 * Ruby version 1.9.3
 * Rails version 3.2.1
