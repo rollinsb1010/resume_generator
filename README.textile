@@ -22,7 +22,7 @@ h2. Development
 * Testing Framework: RSpec and Factory Girl
 * Front-end Framework: Twitter Bootstrap (Sass)
 * Form Builder: SimpleForm
-* PDF Management : Wise PDF
+* PDF Management : Wicked pdf
 
 
 

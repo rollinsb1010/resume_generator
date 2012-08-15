@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 
 gem 'rails', '3.2.1'
-gem 'sqlite3'
 gem "bootstrap-sass", ">= 2.0.4.0"
 gem "simple_form"
 gem 'jquery-rails'
@@ -28,8 +27,8 @@ group :test do
 end
 
 
-
 group :test, :development do
+  gem 'sqlite3'
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "faker"
