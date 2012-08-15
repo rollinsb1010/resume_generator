@@ -1,0 +1,12 @@
+doctype html
+html
+  head
+    meta charset="utf-8"
+    = wicked_pdf_stylesheet_link_tag "pdf"
+  body
+    h2
+      = "#{@resume.first_name} #{@resume.last_name}"
+
+    p
+      = @resume.intro
+
