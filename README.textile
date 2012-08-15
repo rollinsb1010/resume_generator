@@ -1,0 +1,43 @@
+h1. Resume Generator
+
+This application is an exercise in RoR development.
+The goal is to manage resume data and export resume in pdf.
+
+
+h2. Ruby on Rails
+
+This application requires:
+
+* Ruby version 1.9.3
+* Rails version 3.2.1
+
+
+h2. Database
+
+This application uses SQLite with ActiveRecord.
+
+h2. Development
+
+* Template Engine: Slim
+* Testing Framework: RSpec and Factory Girl
+* Front-end Framework: Twitter Bootstrap (Sass)
+* Form Builder: SimpleForm
+* PDF Management : Wise PDF
+
+
+
+
+h2. Documentation and Support
+
+This is the only documentation.
+
+
+h2. Contributing
+
+Contributions are useless, this is a toy project
+
+
+
+h2. License
+
+Free as in "I don't care but I'm not responsible"

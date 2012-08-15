@@ -20,6 +20,7 @@ end
 
 group :development do
   gem "slim-rails"
+  gem "heroku"
 end
 
 group :test do
@@ -34,6 +35,9 @@ group :test, :development do
   gem "faker"
 end
 
+group :production do
+  gem "wkhtmltopdf-heroku"
+end
 
 
 

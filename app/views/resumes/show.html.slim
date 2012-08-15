@@ -1,0 +1,13 @@
+p
+  strong First name:
+  = @resume.first_name
+p
+  strong Last name:
+  = @resume.last_name
+p
+  strong Intro:
+  = @resume.intro
+
+= link_to 'Edit', edit_resume_path(@resume)
+'|
+= link_to 'Back', resumes_path
