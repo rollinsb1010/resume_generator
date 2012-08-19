@@ -1,6 +1,9 @@
-= simple_form_for @resume do |f|
+= simple_nested_form_for @resume do |f|
   = f.input :first_name
   = f.input :last_name
   = f.input :intro
-  = f.button :submit
 
+  = f.fields_for :projects, :class => "project_fields"
+  p
+    = f.link_to_add "Add Project", :projects
+  = f.button :submit

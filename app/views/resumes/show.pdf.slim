@@ -4,9 +4,27 @@ html
     meta charset="utf-8"
     = wicked_pdf_stylesheet_link_tag "pdf"
   body
-    h2
-      = "#{@resume.first_name} #{@resume.last_name}"
+    h1
+      = @resume.first_name
+      strong
+        = " #{@resume.last_name}"
 
     p
-      = @resume.intro
+      = simple_format @resume.intro
+
+    section.projects
+      h2 Projets réalisés
+
+      - @resume.projects.each do |project|
+        section.project
+          h3 = project.title
+          p
+            = simple_format project.description
+          p
+            span Durée :&nbsp;
+            = project.duration
+          p
+            span Technologies :&nbsp;
+            = project.technology_list
+
 

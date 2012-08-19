@@ -1,0 +1,6 @@
+= field_set_tag "Project Details", :class => "project_fields" do
+  = f.input :title
+  = f.input :description
+  = f.input :duration
+  = f.input :technology_list, :url => autocomplete_technology_name_projects_path, :as => :autocomplete, :input_html => {:"data-delimiter" => ', '}
+  = f.link_to_remove "Remove this project"

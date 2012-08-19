@@ -9,6 +9,9 @@ gem "slim"
 gem 'wicked_pdf'
 gem 'responders'
 gem 'strong_parameters'
+gem 'nested_form'
+gem 'acts-as-taggable-on'
+gem 'rails3-jquery-autocomplete'
 
 group :assets do
   gem 'sass-rails'
@@ -32,6 +35,8 @@ group :test, :development do
   gem "rspec-rails"
   gem "factory_girl_rails"
   gem "faker"
+  gem 'capybara-webkit'
+  gem 'database_cleaner'
 end
 
 group :production do

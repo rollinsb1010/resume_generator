@@ -1,5 +1,5 @@
 class ResumesController < ApplicationController
-  respond_to :html
+  respond_to :html, :except => [:show]
   respond_to :pdf, :only => [:show]
 
   def index
@@ -44,9 +44,10 @@ class ResumesController < ApplicationController
     respond_with(@resume)
   end
 
+
   protected
 
   def resume_params
-    params.require(:resume).permit(:first_name, :last_name, :intro)
+    params.require(:resume).permit(:first_name, :last_name, :intro, :projects_attributes)
   end
 end

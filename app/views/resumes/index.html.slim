@@ -4,7 +4,6 @@ table
   tr
     th First name
     th Last name
-    th Intro
     th
     th
     th
@@ -14,11 +13,12 @@ table
     tr
       td = resume.first_name
       td = resume.last_name
-      td = resume.intro
-      td = link_to 'Show', resume
-      td = link_to 'Pdf version', resume_path(resume, :format => :pdf)
-      td = link_to 'Edit', edit_resume_path(resume)
-      td = link_to 'Destroy', resume, :confirm => 'Are you sure?', :method => :delete
+      td = link_to resume_path(resume, :format => :pdf) do
+        i.icon-eye-open
+      td = link_to edit_resume_path(resume) do
+        i.icon-edit
+      td = link_to resume, :confirm => 'Are you sure?', :method => :delete do
+        i.icon-trash
 
 br
 
