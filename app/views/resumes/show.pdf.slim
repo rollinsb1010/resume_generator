@@ -27,4 +27,20 @@ html
             span Technologies :&nbsp;
             = project.technology_list
 
+    section.experiences
+      h2 Expérience professionnelle
+
+      - @resume.experiences.map{|e|ExperienceDecorator.new(e)}.each do |experience|
+        section.experience
+          h3.title = experience.title
+          h3.location = experience.location
+          h3.timespan = experience.timespan
+          - if experience.description.present?
+            p
+              = simple_format experience.description
+          - if experience.technologies.any?
+            p
+              span Technologies :&nbsp;
+              = experience.technology_list
+
 

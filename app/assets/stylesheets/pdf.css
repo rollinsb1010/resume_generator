@@ -6,3 +6,15 @@ h2 {
     font-weight: 100;
     font-size: xx-large;
 }
+
+.experience .title {
+    font-weight: 100;
+}
+
+.experience .location {
+    font-weight: bolder;
+}
+
+.experience .timespan {
+    font-weight: 100;
+}

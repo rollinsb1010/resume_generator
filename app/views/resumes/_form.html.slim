@@ -3,7 +3,12 @@
   = f.input :last_name
   = f.input :intro
 
-  = f.fields_for :projects, :class => "project_fields"
+  = f.fields_for :projects
   p
     = f.link_to_add "Add Project", :projects
+
+  = f.fields_for :experiences
+  p
+    = f.link_to_add "Add Experience", :experiences
+
   = f.button :submit

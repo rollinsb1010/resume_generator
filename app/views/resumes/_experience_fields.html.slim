@@ -1,0 +1,9 @@
+= field_set_tag "Experience Details" do
+  = f.input :title
+  = f.input :company
+  = f.input :place
+  = f.input :from_date, :start_year => Date.today.year - 50, :end_year => Date.today.year , :discard_day => true, :order => [:month, :year]
+  = f.input :until_date, :start_year => Date.today.year - 50, :end_year => Date.today.year , :discard_day => true, :order => [:month, :year],  :include_blank => true
+  = f.input :description
+  = f.input :technology_list, :url => autocomplete_technology_name_projects_path, :as => :autocomplete, :input_html => {:"data-delimiter" => ', '}
+  = f.link_to_remove "Remove this experience"
